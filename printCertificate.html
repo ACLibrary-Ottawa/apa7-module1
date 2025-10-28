@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+	<title>Module 1: Plagiarism</title>
+</head>
+<body>
+	<script type="text/javascript">
+	
+		/*Get string from URL*/
+		var learner_info = window.location.href.split('?print=')[1];
+		
+		/*Split string into variables*/
+		var learner_name = learner_info.split('&')[0];
+		var cert_date = learner_info.split('&')[1];
+		var cert_score = learner_info.split('&')[2];
+		var cert_q1 = learner_info.split('&')[3];
+		var cert_q2 = learner_info.split('&')[4];
+		var cert_q3 = learner_info.split('&')[5];
+		var cert_q4 = learner_info.split('&')[6];
+		var cert_a1q1 = learner_info.split('&')[7];
+		var cert_a1q2 = learner_info.split('&')[8];
+		var cert_a1q3 = learner_info.split('&')[9];
+		var cert_a1q4 = learner_info.split('&')[10];
+		var cert_a1q5 = learner_info.split('&')[11];
+		var cert_a1q6 = learner_info.split('&')[12];
+		var cert_a2q1 = learner_info.split('&')[13];
+		var cert_a2q2 = learner_info.split('&')[14];
+		var cert_a2q3 = learner_info.split('&')[15];
+		var cert_a2q4 = learner_info.split('&')[16];
+		var cert_a2q5 = learner_info.split('&')[17];
+		
+
+		/*Rounded border*/
+		document.write('<div id="position" style="width:95%;padding:15px;border:2px outset gray;display:block">');
+		
+		/*Content*/
+		document.write('<div class="bigText" style="font-weight: bold"><img src="http://plato.algonquincollege.com/ac-library/OER/module3/logoAC131x35.png" style="width:131px;height:35px;padding-bottom:10px;"alt="Algonquin Logo"></div>');
+		document.write('<div class="smallText">This is to acknowledge that</div>');
+		document.write('<div class="bigText">' + unescape(learner_name) + '</div>');
+		document.write('<div class="smallText">has successfully completed</div>');
+		document.write('<div class="bigText">APA Module 1: Plagiarism</div>');
+		document.write('<div class="smallText" style="font-weight:bold; margin-bottom:30px;">with a score of '+ unescape(cert_score) +'  out of 11</div>');
+		document.write('<hr>');
+		document.write('<div class="smallText" style="text-align:left; font-weight:bold">Activity 1: Submitted answers</div>');		
+		document.write('<table class="tableStyle">');
+		document.write('<thead>');
+		document.write('<tr>');
+		document.write('<th style="width:70%">Question</th>');
+		document.write('<th>Submitted Response:</th>');
+		document.write('</tr>');
+		document.write('</thead>');
+		document.write('<tr>');
+		document.write('<td>Is this common knowledge? A statement that nurses work in a hospital </td>');
+		document.write('<td>' + unescape(cert_a1q1) + '</td>');
+		document.write('</tr>');
+		document.write('<tr>');
+		document.write('<td>Is this common knowledge? A description of the aseptic technique in nursing </td>');
+		document.write('<td>' + unescape(cert_a1q2) + '</td>');
+		document.write('</tr>');
+		document.write('<tr>');
+		document.write('<td>Is this common knowledge? A statement that tells the reader about the importance of a clean kitchen when baking </td>');
+		document.write('<td>' + unescape(cert_a1q3) + '</td>');
+		document.write('</tr>');
+		document.write('<tr>');
+		document.write('<td>Is this common knowledge?  Discussing the different chemical reactions of using baking soda instead of baking powder in a cake recipe </td>');
+		document.write('<td>' + unescape(cert_a1q4) + '</td>');
+		document.write('</tr>');
+		document.write('<tr>');
+		document.write('<td>Is this common knowledge?  Listing the software programs compatible with Mac products </td>');
+		document.write('<td>' + unescape(cert_a1q5) + '</td>');
+		document.write('</tr>');
+		document.write('<tr>');
+		document.write('<td>Is this common knowledge? Listing the health problems once can develop from leading a sedentary lifestyle </td>');
+		document.write('<td>' + unescape(cert_a1q6) + '</td>');
+		document.write('</tr>');
+		document.write('</table>');
+		document.write('<div class="smallText" style="text-align:left; font-weight:bold">Activity 2: Submitted answers</div>');
+		document.write('<table class="tableStyle">');
+		document.write('<thead>');
+		document.write('<tr>');
+		document.write('<th style="width:70%">Question</th>');
+		document.write('<th>Submitted Response:</th>');
+		document.write('</tr>');
+		document.write('</thead>');
+		document.write('<tr>');
+		document.write('<td>Is this plagiarism? You lent a friend your assignment, and he copied chunks of it. Are you (the one who lent the assignment) guilty of plagiarism? </td>');
+		document.write('<td>' + unescape(cert_a2q1) + '</td>');
+		document.write('</tr>');
+		document.write('<tr>');
+		document.write('<td>Is this plagiarism? You include lyrics from a song in your paper, and you use quotation marks. You did not include an in-text citation because they are song lyrics. </td>');
+		document.write('<td>' + unescape(cert_a2q2) + '</td>');
+		document.write('</tr>');
+		document.write('<tr>');
+		document.write('<td>Is this plagiarism? In a paper, you discuss the fact that Barack Obama was the first person of colour to be President of the United States, and you don&#39t include a citation.</td>');
+		document.write('<td>' + unescape(cert_a2q3) + '</td>');
+		document.write('</tr>');
+		document.write('<tr>');
+		document.write('<td>Are YOU guilty of plagiarism? You are working on a group project, and your teammate copied several sentences from the Internet. She did not use in-text citations, nor did she include these sources in the reference page.</td>');
+		document.write('<td>' + unescape(cert_a2q4) + '</td>');
+		document.write('</tr>');
+		document.write('<tr>');
+		document.write('<td>Is this plagiarism? You play a lot of video games and often discuss specific information related to video games with your friends. You write a paper and include a lot of information about video games that you did not research. You just happen to be an expert on the topic. You do not cite because it comes from your own head. </td>');
+		document.write('<td>' + unescape(cert_a2q5) + '</td>');
+		document.write('</tr>');
+		document.write('</table>');		
+		document.write('<div class="smallText" style="text-align:left; font-weight:bold">Activity 3: Submitted answers</div>');
+		document.write('<table class="tableStyle">');
+		document.write('<thead>');
+		document.write('<tr>');
+		document.write('<th style="width:40%">Question</th>');
+		document.write('<th>Submitted Response:</th>');
+		document.write('</tr>');
+		document.write('</thead>');
+		document.write('<tr>');
+		document.write('<td>Explain what plagiarism is in your own words.</td>');
+		document.write('<td>' + unescape(cert_q1) + '</td>');
+		document.write('</tr>');
+		document.write('<tr>');
+		document.write('<td>What types of sources require in-text citations and a reference page?</td>');
+		document.write('<td>' + unescape(cert_q2) + '</td>');
+		document.write('</tr>');
+		document.write('<tr>');
+		document.write('<td>What can happen to a student who commits plagiarism? List three of the possible consequences.</td>');
+		document.write('<td>' + unescape(cert_q3) + '</td>');
+		document.write('</tr>');
+		document.write('<tr>');
+		document.write('<td>What percentage of a paper can be direct quotes if a student wants to avoid being accused of plagiarism?</td>');
+		document.write('<td>' + unescape(cert_q4) + '</td>');
+		document.write('</tr>');
+		document.write('</table>');
+		document.write('<div class="smallText">' + unescape(cert_date) + '</div>');
+		
+		document.write('</div>');
+
+		/*Send print request to browser if possible*/
+		window.onload = function() { window.print(); }
+
+	</script>
+
+	<style type="text/css">
+
+		.bigText{
+			overflow:auto;
+			font-size:30px;
+			font-family: arial, sans-serif;
+			margin-top: 10px;
+			text-align: center;
+			
+		}
+		
+		.smallText{
+			overflow:auto;
+			font-size:18px;
+			font-family: arial, Sans-Serif;
+			margin-top: 10px;
+			text-align: center;
+		}
+		
+		.tableStyle {
+			margin-top: 15px;   
+			border-collapse: collapse;
+			width: 100%;
+			font-size:18px;
+			font-family: Serif;
+			text-align: left;
+			border:1px solid #dee2e6;
+		}
+		
+		.tableStyle thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+			padding: 10px;
+			font-weight: bold;
+			
+		}
+		
+		
+		.tableStyle thead td, .tableStyle tr td  {
+    vertical-align: bottom;
+    border-bottom: 1px solid #dee2e6; border-left: 1px solid #dee2e6;
+			padding: 10px;
+		}
+		
+		
+		
+		#position{
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+	</style>
+
+</body>
+
+
+
+</html>
